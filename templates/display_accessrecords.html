@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <table border="2px">
+            <tr>
+                <th>name</th>
+                <th>date</th>
+                <th>author</th>
+            </tr>
+            {% for ar in asro %}
+            <tr>
+                <th>{{ar.name}}</th>
+                <th>{{ar.date}}</th>
+                <th>{{ar.author}}</th>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
